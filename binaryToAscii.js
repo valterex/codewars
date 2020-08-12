@@ -2,7 +2,9 @@
 // https://www.codewars.com/kata/5583d268479559400d000064/javascript
 
 const binaryToString = (binary) => {
-  return binary.replace(/[01]{8}/g, (x) => String.fromCharCode(parseInt(x, 2)));
+  return binary.replace(/[01]{8}/g, (x) => {
+    return String.fromCharCode(parseInt(x, 2));
+  });
 };
 
 binaryToString("01100001"); // "a"
